@@ -1,0 +1,629 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    Font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 9.9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #959595;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.headerBody {
+    width: auto;
+    height: 95px;
+    margin: 0px auto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.siteLogo img {
+    margin: -18px 0px 0px 95px;
+}
+
+.search__container {
+    margin: 18px 0px 0px 345px;
+}
+
+.search__input {
+    width: 520px;
+    padding: 11px 24px 11px 30px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 17.5px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #0475bb;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.search__input::placeholder {
+    color: color(#0475bb);
+    letter-spacing: 1.6px;
+}
+
+.search__input:focus {
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #0475bb;
+    border-radius: 0;
+    background-position: 100% center;
+    box-shadow: none;
+}
+
+.buttons {
+    margin: 25px 0px 0px 24px;
+}
+
+.buttonsS {
+    margin: 25px 0px 0px 0px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0px 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0475bb;
+}
+
+.effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #0475bb;
+    outline: solid 2px #0475bb;
+    position: relative;
+    transition-duration: .6s;
+    overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: .6s;
+}
+
+.effect04:hover {
+    background-color: #0475bb;
+}
+
+.effect04:hover span {
+    -webkit-transform: translateY(-400%) scale(-0.1, 20);
+    transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+    content: attr(data-sm-link-text);
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1, 20);
+    transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+}
+
+#offers {
+    margin-left: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.headText {
+    margin: -49px 0px 0px 602px;
+    display: flex;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.compare {
+    margin-left: 5px;
+    color: #b3b3b5;
+}
+
+.searchImg {
+    margin: 4.5px 0px 0px 6px;
+}
+
+.searchImgCon {
+    margin: 23px 0px 0px -40px;
+    height: 35px;
+    width: 35px;
+    background-color: #0475bb;
+    border-radius: 100px;
+    position: relative;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.mySlides img {
+    height: 406px;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    list-style: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    margin-left: 82px;
+}
+
+#main a {
+    position: relative;
+    padding-bottom: 4.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#main li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 120px;
+    margin-top: -5px;
+}
+
+#main a:hover {
+    color: #0475bb;
+}
+
+#main a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    margin: -5px 0;
+    background-color: #0475bb;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+#main a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0475bb;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 100px;
+}
+
+#myBtn:hover {
+    background-color: #ff4d52;
+    transition: all 0.5s;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+}
+
+.box {
+    text-align: center;
+    width: 14.1%;
+    border: 1px solid rgb(241, 241, 245);
+    height: 196px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin: 20px 40px;
+}
+
+.box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#main-content {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+
+svg {
+    cursor: pointer;
+    overflow: visible;
+    width: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+svg #heart {
+    transform-origin: center;
+    animation: animateHeartOut 0.3s linear forwards;
+}
+
+svg #main-circ {
+    transform-origin: 29.5px 29.5px;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #e2264d;
+    animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+#checkbox:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle 0.3s linear forwards;
+    opacity: 1;
+}
+
+#checkbox:checked+label svg #grp1 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp1 #oval1 {
+    transform: scale(0) translate(0, -30px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp1 #oval2 {
+    transform: scale(0) translate(10px, -50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp2 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp2 #oval1 {
+    transform: scale(0) translate(30px, -15px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp2 #oval2 {
+    transform: scale(0) translate(60px, -15px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp3 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp3 #oval1 {
+    transform: scale(0) translate(30px, 0px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp3 #oval2 {
+    transform: scale(0) translate(60px, 10px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp4 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp4 #oval1 {
+    transform: scale(0) translate(30px, 15px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp4 #oval2 {
+    transform: scale(0) translate(40px, 50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp5 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp5 #oval1 {
+    transform: scale(0) translate(-10px, 20px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp5 #oval2 {
+    transform: scale(0) translate(-60px, 30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp6 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp6 #oval1 {
+    transform: scale(0) translate(-30px, 0px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp6 #oval2 {
+    transform: scale(0) translate(-60px, -5px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp7 {
+    opacity: 1;
+    transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked+label svg #grp7 #oval1 {
+    transform: scale(0) translate(-30px, -15px);
+    transform-origin: 0 0 0;
+    transition: 0.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp7 #oval2 {
+    transform: scale(0) translate(-55px, -30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform 0.3s;
+}
+
+#checkbox:checked+label svg #grp2 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked+label svg #grp3 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked+label svg #grp4 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked+label svg #grp5 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked+label svg #grp6 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked+label svg #grp7 {
+    opacity: 1;
+    transition: 0.1s opacity 0.3s;
+}
+
+@keyframes animateCircle {
+    40% {
+        transform: scale(10);
+        opacity: 1;
+        fill: #dd4688;
+    }
+    55% {
+        transform: scale(11);
+        opacity: 1;
+        fill: #d46abf;
+    }
+    65% {
+        transform: scale(12);
+        opacity: 1;
+        fill: #cc8ef5;
+    }
+    75% {
+        transform: scale(13);
+        opacity: 1;
+        fill: transparent;
+        stroke: #cc8ef5;
+        stroke-width: 0.5;
+    }
+    85% {
+        transform: scale(17);
+        opacity: 1;
+        fill: transparent;
+        stroke: #cc8ef5;
+        stroke-width: 0.2;
+    }
+    95% {
+        transform: scale(18);
+        opacity: 1;
+        fill: transparent;
+        stroke: #cc8ef5;
+        stroke-width: 0.1;
+    }
+    100% {
+        transform: scale(19);
+        opacity: 1;
+        fill: transparent;
+        stroke: #cc8ef5;
+        stroke-width: 0;
+    }
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: scale(0.2);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animateHeartOut {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.imgBox {
+    height: 86px;
+    padding: 11px 8px;
+    margin: 34px 50px 5px 50px;
+    border-radius: 6px;
+}
+
+.flex {
+    display: flex;
+}
+
+.foll {
+    margin: 14px -7px 0px 85px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.marHed {
+    margin-top: 11px;
+    color: rgb(35, 42, 49);
+    font-weight: 700;
+}
+
+.off {
+    color: rgb(130, 140, 147);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+footer {
+    width: 100%;
+    height: 115px;
+    margin-top: 40px;
+    background-color: #f1f1f5;
+    border-top: #dddddd 1px solid;
+}
+
+.flexRow {
+    display: flex;
+    margin: 0 auto;
+    width: 930px;
+}
+
+.footText {
+    width: 200px;
+    text-align: center;
+    margin-top: 49px;
+    color: rgb(45, 50, 55);
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footText:hover {
+    text-decoration: underline;
+}
+
+.head {
+    font-size: 26px;
+    margin-left: 88px;
+    color: rgb(35, 42, 49);
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.bor {
+    border-top: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+}
